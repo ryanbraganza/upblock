@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn8d8l7iudtst"]
+
+[ext_resource type="Texture2D" uid="uid://dfmaqofe7kdni" path="res://icon.svg" id="1_vi4h4"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ylupt"]
+
+[node name="Ground" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_ylupt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 24)
+scale = Vector2(4.48438, 0.375)
+texture = ExtResource("1_vi4h4")
