@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgorei28l72r"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_q0chx"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_q0chx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -328.0
+offset_bottom = 23.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+bbcode_enabled = true
+text = "[right]Timer goes here[/right]"
+fit_content = true

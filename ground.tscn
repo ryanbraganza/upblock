@@ -1,17 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn8d8l7iudtst"]
+[gd_scene load_steps=4 format=3 uid="uid://dn8d8l7iudtst"]
 
+[ext_resource type="Script" path="res://ground.gd" id="1_okhma"]
 [ext_resource type="Texture2D" uid="uid://dfmaqofe7kdni" path="res://icon.svg" id="1_vi4h4"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ylupt"]
 
 [node name="Ground" type="Node2D"]
+script = ExtResource("1_okhma")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_ylupt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 24)
-scale = Vector2(4.48438, 0.375)
+scale = Vector2(11.7969, 0.375)
 texture = ExtResource("1_vi4h4")
